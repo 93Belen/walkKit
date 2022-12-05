@@ -6,7 +6,7 @@ export const getWeather = async() => {
     // Call API to get coordinates
     let coordinate = await getCoordinates();
     // Add coordinates to endpoint. Weather forecast API
-    const endpoint = `http://localhost:8080/apicall/${coordinate.lat}/${coordinate.lon}`;
+    const endpoint = `https://walkkit-production.up.railway.app/apicall/${coordinate.lat}/${coordinate.lon}`;
 
     try{
         const response = await fetch(endpoint);

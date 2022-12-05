@@ -10,7 +10,7 @@ export const getCoordinates = async() => {
     }
 
     // API
-    const endpoint = `http://localhost:8080/apicall/${cityName}`;
+    const endpoint = `https://walkkit-production.up.railway.app/apicall/${cityName}`;
 
     // Fetch API
     try{
