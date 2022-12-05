@@ -3,6 +3,11 @@ import { displayIcon} from './functionalities/Interactivity/displayIcon.js';
 import { getBestHours } from './functionalities/Interactivity/getBestHours.js';
 import { displayBestHours } from './functionalities/Interactivity/displayBestHours.js';
 
+import express from 'express';
+
+const app = express();
+app.listen(process.env.PORT);
+
 // All functions are called and result is displayed when clicking form button
 const displayForecast = async(e) => {
         e.preventDefault();
